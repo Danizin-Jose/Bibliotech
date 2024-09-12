@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Entrada</title>
+    <link rel="stylesheet" href="entradaindex.css">
+    <script>
+        function submit() {
+            alert("Dados enviados com sucesso!");
+        }
+        function cancelForm() {
+            alert("Dados cancelados com sucesso!");
+        }
+    </script>
+    <script>
+        function redirecionarHome() {
+            window.location.href = "home.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Entrada</h2>
+        <form action="#" method="POST" onsubmit="submit()">
+            <div class="form-group">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+		        <button type="button" onclick="redirecionarHome()">Entrar</button>
+		        <button type="reset" onclick="cancelForm()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
